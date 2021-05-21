@@ -60,9 +60,9 @@ body {
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-    <img src="\Jenny's Reads\JennyReads\jpg\alice.jpg" style="width:100%">
-    <img src="\Jenny's Reads\JennyReads\jpg\addie.jpg" style="width:100%">
-    <img src="\Jenny's Reads\JennyReads\jpg\beauty.jpg" style="width:100%">
+    <img src="alice.jpg" style="width:100%">
+    <img src="addie.jpg" style="width:100%">
+    <img src="beauty.jpg" style="width:100%">
     <img src="\Jenny's Reads\JennyReads\jpg\alice.jpg" style="width:100%">
     <img src="\Jenny's Reads\JennyReads\jpg\alice.jpg" style="width:100%">
     <img src="\Jenny's Reads\JennyReads\jpg\alice.jpg" style="width:100%">
