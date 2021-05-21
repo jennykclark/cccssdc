@@ -1,116 +1,109 @@
-# <!DOCTYPE html>
+<! DOCTYPE html>
+
 <html>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
+<head> 
+<title> Book Time</title>
+<link rel="stylesheet" href="jennyCSS.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<script src="jquery-3.5.1.min.js"></script>
+<script src="jennyJS.js"></script>
+</head> 
 <body>
 
-<!-- Header -->
-<div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
+<nav id="topDiv">
+<img src="logoColour.png" id="logobook" alt="The Jenny's Reads logo which is a book within a circle">
 
-<!-- Photo Grid -->
-<div class="row"> 
-  <div class="column">
-    <img src="alice.jpg" style="width:100%">
-    <img src="addie.jpg" style="width:100%">
-    <img src="beauty.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-  </div>
-  
-  <div class="column">
-            <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-  </div> 
-   
-  <div class="column">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-  </div>
-  
-  <div class="column">
-    <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-        <img src="alice.jpg" style="width:100%">
-    <img src="alice.jpg" style="width:100%">
-    
-  </div>
+
+<div id="shs">
+<a href="#books" id="books" class="active"> Books </a>
+<a href="#about" id="about"> About </a>
+<a href="#Emma" id="emma"> Emma's Section </a>
 </div>
+</nav>
+<!-- grid code came from https://codepen.io/tutsplus/pen/rQrVBg?editors=0100 -->
+  <div class="grid-container">
+
+    <article id="3685" class="location-listing">
+
+      <a class="location-title" href="#">
+					Alice’s Adventures in Wonderland & Through the looking glass</a>
+
+      <div class="location-image">
+        <a href="#">
+		<img src="addie.jpg" alt="Alice's Adventures in Wonderland"></a>
+
+      </div>
+
+    </article>
+
+    <article id="3688" class="location-listing">
+
+      <a class="location-title" href="#">
+					London</a>
+
+      <div class="location-image">
+        <a href="#">
+		<img src="addie.jpg" alt="Alice's Adventures in Wonderland"></a>
+
+      </div>
+
+    </article>
+
+    <article id="3691" class="location-listing">
+
+      <a class="location-title" href="#">
+					New York</a>
+
+      <div class="location-image">
+        <a href="#">
+		<img src="addie.jpg" alt="Alice's Adventures in Wonderland"></a>
+
+      </div>
+
+    </article>
+
+    <article id="3694" class="location-listing">
+
+      <a class="location-title" href="#">
+					Cape Town						</a>
+
+      <div class="location-image">
+        <a href="#">
+		<img src="addie.jpg" alt="Alice's Adventures in Wonderland"></a>
+
+      </div>
+
+    </article>
+
+    <article id="3697" class="location-listing">
+
+      <a class="location-title" href="#">
+					Beijing						</a>
+
+      <div class="location-image">
+        <a href="#">
+		<img src="addie.jpg" alt="Alice's Adventures in Wonderland"></a>
+
+      </div>
+
+    </article>
+
+    <article id="3700" class="location-listing">
+
+      <a class="location-title" href="#">
+		Paris</a>
+
+        <div class="location-image">
+        <a href="#">
+		<img src="addie.jpg" alt="Alice's Adventures in Wonderland"></a>					
+		</a>
+      </div>
+
+    </article>
+
+  </div>
 
 </body>
 </html>
