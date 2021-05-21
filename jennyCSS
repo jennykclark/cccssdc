@@ -1,0 +1,363 @@
+/* jenny's reads css */ 
+
+/* homepage */ 
+body {
+	font-family: Tahoma, Trebuchet MS, arial narrow;
+	  margin: 0;
+      padding: 0;
+      width: 100%;
+	  background-color: #cce3de;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Oswald', sans-serif;
+}
+#bodyHomepage {
+	background-color: #6B9080;
+}
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+
+/* nav bar */ 
+#nav {
+	background-color: #335D55;
+	display: block;
+	height: 50px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 100px;
+	position: relative;
+	text-align: center;
+}
+
+#nav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#nav a:hover {
+  color: #a4c3b2;
+}
+
+/* books */ 
+
+#shs {
+	width: auto;
+	height: 50px;
+	background-color: #335D55;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: center;
+}
+
+#shs a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#shs a:hover {
+  color: #a4c3b2;
+}
+
+#logobook {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding: 0;
+}
+#topDiv {
+	background-color: #6B9080;
+	margin: 0 auto 0 auto;
+	
+}
+#shs .active {
+	color: #a4c3b2;
+}
+
+/* grid code from https://codepen.io/tutsplus/pen/rQrVBg?editors=0100 */
+img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-gap: 1em;
+  margin: 10px;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  text-align: center;
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+
+/* book info */
+#photoSide {
+	background-color: #a4c3b2;
+	float: left;
+	flex: 28%;
+	margin: 10px 0 10px 10px;
+}
+#AliceInfo {
+	/* width: 400px;
+	height: 533px; */
+	width: 90%;
+	padding: 10px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#infoSide {
+	float: right;
+	flex: 60%;
+	margin: 10px 10px 0 0;
+	padding: 20px;
+}
+
+#Title {
+	padding-top: 10px;
+}
+
+.ReviewStar {
+	height: 50px;
+}
+.star1 {
+	display: inline-block;
+	float: left;
+	width: 5%;
+	padding: 5px;
+}
+
+#TextInfo {
+	float: left;
+}
+
+#whereBuy {
+	display: block;
+	float: left;
+}
+#whereBuy a:hover {
+	color: #ff9666;
+	text-decoration: underline;
+}
+#whereBuy a:link {
+	font-size: bold;
+	color: #41766b;
+	text-decoration: none;
+}
+#whereBuy a:active {
+	color: #f7e6b1;
+	text-decoration: underline;
+}
+
+/* about me */ 
+#jennyPhoto {
+	height: 500px;
+	width: 500px;
+	padding: 10px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#starSystem {
+	padding: 30px;
+}
+
+/* emma section */
+#aha {
+	width: auto;
+	height: 50px;
+	background-color: #B195AF;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	text-align: center;
+}
+
+#aha a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#aha a:hover {
+  color: #FFC2D6;
+}
+
+#topDivEm {
+	background-color: #A7DCBF;
+	margin: 0 auto 0 auto;
+	
+}
+#aha .active {
+	color: #FFC2D6;
+}
+#bodyEm {
+	background-color: #DCD0DB;
+}
+#photoSideEm {
+	background-color: #A7DCBF;
+	float: left;
+	width: 38%;
+	margin: 10px 0 0 10px;
+}
+
+#FullPage {
+	display: flex;
+	flex-direction: row; 
+}
+@media screen and (max-width: 1050px) {
+	#photoSide {
+		flex: 100%;
+		display: block;
+		margin: auto;
+	}
+			
+	.location-listing {
+		width: 70%;
+		padding: auto;
+	    display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+		text-align: center;
+	}
+	.location-title {
+		
+	}
+	.grid-container {
+		margin: 10px;
+	}
+	#Title {
+		text-align: center;
+	}
+	#AliceInfo {
+		flex: 50%;
+	}
+	#FullPage {
+		display: flex;
+		flex-direction: column;
+	}
+	#logobook {
+		width: 30%;
+		display: block;
+	}
+	#infoSide {
+		flex: 100%;
+		display: block;
+		clear: both;
+        margin-left: auto;
+        margin-right: auto;
+		padding: auto;
+		position: relative;
+	}
+	#whereBuy {
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+	.star1 {
+		width: 10%;
+		text-align: center;
+		display: block;
+		margin-left: auto;
+		padding: 10px;
+        margin-right: auto;
+	}
+	#logo {
+    display: block;
+    width: 100%;
+    }
+	#jennyPhoto {
+	height: 350px;
+	width: 350px;
+	padding: auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+     
+	#photoSideEm {
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
+	/* #topDiv {
+		height: 30%;
+		display: block;
+	} */
+}
+
